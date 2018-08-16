@@ -1,7 +1,11 @@
 function encoder(input) {
-  lowerCaseString = input.toLowerCase();
-  alphaString = lowerCaseString.replace(/\W/g, "");
-  return alphaString;
+  var lowerCaseString = input.toLowerCase();
+  var alphaString = lowerCaseString.replace(/\W/g, "");
+    console.log("the new string is " + alphaString);
+  var rowNumber = Math.ceil(Math.sqrt(alphaString.length));
+    console.log("the row number is " + rowNumber);
+  var rowOne = alphaString.split("", rowNumber);
+    console.log("rowOne is " + rowOne);
 }
 
 

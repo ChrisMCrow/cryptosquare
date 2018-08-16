@@ -12,8 +12,9 @@ In this method, the spaces and punctuation are removed from the English text and
 | # | Spec | Input | Output |
 | :-------------     | :-------------     | :------------- | :------------- |
 | 1 | The program will remove all non-letters and non-digits. | I am 24! | Iam24 |
-| 2 | Th program will convert the string to lower case. | My nAme Is Ke$ha | mynameiskeha |
-| 3 | The program will return the encoded message using the cryptosquare rules | Don't compare yourself to others, compare yourself to the person you were yesterday | daeer leweo rlref rerne fsyts rdtyt coooe acooo utnyy ouomr hyemr tpseo spsha eput |
+| 2 | The program will convert the string to lower case. | My nAme Is Ke$ha | mynameiskeha |
+| 3 | Determine the number of rows in the cryptosquare | Don't compare yourself to others, compare yourself to the person you were yesterday | 9 |
+| 4 | The program will return the encoded message using the cryptosquare rules | Don't compare yourself to others, compare yourself to the person you were yesterday | daeer leweo rlref rerne fsyts rdtyt coooe acooo utnyy ouomr hyemr tpseo spsha eput |
 
 ## Setup/Installation Requirements
 

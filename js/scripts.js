@@ -1,11 +1,23 @@
 function encoder(input) {
   var lowerCaseString = input.toLowerCase();
   var alphaString = lowerCaseString.replace(/\W/g, "");
-    console.log("the new string is " + alphaString);
-  var rowNumber = Math.ceil(Math.sqrt(alphaString.length));
-    console.log("the row number is " + rowNumber);
-  var rowOne = alphaString.split("", rowNumber);
-    console.log("rowOne is " + rowOne);
+  console.log(alphaString.length);
+  var rowNumber = Math.floor(Math.sqrt(alphaString.length));
+  var alphaArray = alphaString.split("");
+  var codedArray = []
+  console.log(rowNumber)
+
+  for (loop = 0; loop < rowNumber; loop++) {
+    for (var i = 0; i < alphaArray.length; i += rowNumber) {
+      codedArray.push(alphaArray[i + loop])
+    }
+  }
+  for (i = 5; i < codedArray.length; i += 6) {
+    codedArray.splice(i, 0, " ");
+  }
+
+  var result = codedArray.join("");
+  return result;
 }
 
 
